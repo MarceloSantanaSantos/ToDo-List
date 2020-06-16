@@ -2,9 +2,6 @@ var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
-var buttonClean = document.querySelector('.btn a');
-
-
 var todos = JSON.parse(localStorage.getItem('list_todos')) || [];
 
 function renderTodos() {
@@ -36,7 +33,7 @@ renderTodos();
 function addTodo() {
     var todoText = inputElement.value;
     if (inputElement.value == '') {
-        alert ("Não aceitamos tarefas vazias!");
+        alert("Não é permitido valores vazions!");
     }
     else {
         todos.push(todoText);

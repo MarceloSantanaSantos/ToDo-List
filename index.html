@@ -6,25 +6,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"></head>
 <body>
-    <div class="modalError">
-        <div class="modal-content">
-            <div class="modal-content-top">
-                <div></div>
-                <h4>Attention: Error</h4>
-                <div class="btns">
-                    <div class='btn-amarelo'></div>
-                    <div class='btn-verde'></div>
-                    <div class='btn-vermelho'></div>
-                </div>
-            </div>
-            <div class="modal-content-body">
-                <p>// Não é permitido enviar itens vazios!</p>
-                <p>// Por favor, escreva corretamente o campo</p>
-                <p>// Clique no botão vermelho para fechar a caixa</p>
-                <p>// Obrigado --ms</p>
-            </div>
-        </div>
-    </div>
     <div class="main">
         <span>QUICK LIST</span>
         <div id="app">
@@ -34,12 +15,13 @@
             <div class="user-painel">
                 <input type="text" placeholder="What you'll have to do ?">
                 <div class="btn">
-                    <button>Add</button>
+                    <button id="btn">Add</button>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
